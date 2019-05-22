@@ -12,7 +12,7 @@ const knex = require('knex') ({
   }
 });
 
-knex.select().from('famous_people').asCallback((err, result) => {
+knex.select().from('milestones').asCallback((err, result) => {
    if (err) {
     return console.error("Connection Error", err);
   }
